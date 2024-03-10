@@ -1,8 +1,8 @@
 // app/schedule/track_task.js
 module.exports = {
   schedule: {
-    // cron: '0 0 0 * * *',
-    interval: '5s',
+    cron: '0 0 0 * * *',
+    // interval: '5s',
     type: 'all',
   },
   async task(ctx) {
