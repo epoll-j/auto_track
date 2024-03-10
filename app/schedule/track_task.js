@@ -21,6 +21,7 @@ module.exports = {
         'select track_type, count(track_type) as num from user_track WHERE DATE(create_time) = CURDATE() group by track_type '
       );
       const data = {
+        app_key: appKey,
         app_dau: dau,
         app_nu: nu,
         other_params: JSON.stringify(trackCount),
