@@ -1,9 +1,8 @@
 // app/schedule/track_task.js
 module.exports = {
   schedule: {
-    cron: '0 0 0 * * *',
-    // interval: '5s',
-    type: 'all',
+    cron: '0 1 0 * * *',
+    type: 'worker',
   },
   async task(ctx) {
     const apps = await ctx.app.mysql.select('app_info', {
